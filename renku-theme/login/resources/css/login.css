@@ -442,7 +442,7 @@ a.zocial  {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc7f684', endColorstr='#ff8dc63f', GradientType=0);
     border-color: #435d1e;
-    color: #fff;
+    color: #000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -458,7 +458,7 @@ a.zocial  {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8e99db', endColorstr='#ff5561a6', GradientType=0);
     border-color: #2c335e;
-    color: #000;
+    color: #fff;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary {

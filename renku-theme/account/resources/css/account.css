@@ -27,6 +27,11 @@ header .navbar {
     text-indent: -99999px;
 }
 
+.navbar-pf {
+    background: #fff;
+    border-top: 3px solid #5561a6;
+}
+
 .navbar-pf .navbar-utility {
 	right: 20px;
     top: -34px;
@@ -34,10 +39,14 @@ header .navbar {
 }
 
 .navbar-pf .navbar-utility > li > a {
-    color: #fff !important;
+    color: #000 !important;
     padding-bottom: 12px;
     padding-top: 11px;
     border-left: medium none;
+}
+
+.navbar-pf .navbar-utility > li > a:hover {
+    background: #fff;
 }
 
 .container {
@@ -282,7 +291,7 @@ hr + .form-horizontal {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc7f684', endColorstr='#ff8dc63f', GradientType=0);
     border-color: #435d1e;
-    color: #fff;
+    color: #000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
