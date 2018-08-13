@@ -1,3 +1,3 @@
 FROM busybox
-COPY renku_theme /renku_theme
+COPY renku-theme /renku-theme
 

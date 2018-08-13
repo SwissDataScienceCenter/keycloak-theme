@@ -35,12 +35,12 @@
 }
 
 #kc-locale ul li a:hover {
-    color: #4d5258;
-    background-color: #d4edfa;
+    color: #2c335e;
+    background-color: #8e99db;
 }
 
 #kc-locale-dropdown a {
-    color: #4d5258;
+    color: #2c335e;
     background: 0 0;
     padding: 0 15px 0 0;
     font-weight: 300;
@@ -68,26 +68,22 @@ a#kc-current-locale-link::after {
     padding-top: 40px;
 }
 
-.login-pf a:hover {
-    color: #0099d3;
-}
-
 #kc-logo {
     width: 100%;
 }
 
 #kc-logo-wrapper {
-    background-image: url(../img/keycloak-logo-2.png);
+    background-image: url(../img/renku-logo.png);
     background-repeat: no-repeat;
-    height: 63px;
+    height: 82px;
     width: 300px;
-    margin: 62px auto 0;
+    margin: 82px auto 0;
 }
 
 div.kc-logo-text {
-    background-image: url(../img/keycloak-logo-text.png);
+    background-image: url(../img/renku-logo.png);
     background-repeat: no-repeat;
-    height: 63px;
+    height: 82px;
     width: 300px;
     margin: 0 auto;
 }
@@ -103,12 +99,12 @@ div.kc-logo-text span {
 }
 
 #kc-header-wrapper {
-    font-size: 29px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.2em;
-    padding: 62px 10px 20px;
-    white-space: normal;
+    content: "";
+    background-image: url(../img/renku-logo.png);
+    background-repeat: no-repeat;
+    height: 82px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 #kc-content {
@@ -438,4 +434,54 @@ a.zocial  {
 
 .login-pf-page .btn-primary {
     margin-top: 0;
+}
+
+.btn-primary {
+    background-color: #8dc63f;
+    background-image: linear-gradient(to bottom, #c7f684 0%, #8dc63f 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc7f684', endColorstr='#ff8dc63f', GradientType=0);
+    border-color: #435d1e;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #8dc63f;
+    background-image: none;
+    border-color: #435d1e;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #5561a6;
+    background-image: linear-gradient(to bottom, #8e99db 0%, #5561a6 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8e99db', endColorstr='#ff5561a6', GradientType=0);
+    border-color: #2c335e;
+    color: #fff;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary {
+    background-color: #5561a6;
+    background-image: none;
+    border-color: #2c335e;
+    color: #fff;
+}
+
+.login-pf a:hover, a:hover, a:focus {
+    color: #2c335e;
+}
+
+a {
+    color: #5561a6;
+}
+
+.form-control:hover {
+    border-color: #2c335e;
+}
+
+form-control:focus {
+    border-color: #5561a6;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(85, 97, 166, 0.6);
 }
