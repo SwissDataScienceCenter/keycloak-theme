@@ -98,13 +98,12 @@ div.kc-logo-text span {
     white-space: nowrap;
 }
 
-#kc-header-wrapper {
-    content: "";
+#renku-logo-wrapper {
     background-image: url(../img/renku-logo.png);
     background-repeat: no-repeat;
     height: 82px;
     width: 300px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 #kc-content {
@@ -373,7 +372,7 @@ a.zocial  {
   padding: 0 20px;
   max-width: 500px;
   border-top: 0;
-  box-shadow: 0 0 0;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 
 /*tablet*/
@@ -383,6 +382,7 @@ a.zocial  {
       margin-left: 20px;
       margin-right: 20px;
       padding: 20px 20px 30px 20px;
+      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     }
 }
 @media (max-width: 767px) {
@@ -458,7 +458,7 @@ a.zocial  {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8e99db', endColorstr='#ff5561a6', GradientType=0);
     border-color: #2c335e;
-    color: #fff;
+    color: #000;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary {
@@ -480,7 +480,7 @@ a {
     border-color: #2c335e;
 }
 
-form-control:focus {
+.form-control:focus {
     border-color: #5561a6;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(85, 97, 166, 0.6);
