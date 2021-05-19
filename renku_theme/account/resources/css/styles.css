@@ -1,0 +1,17 @@
+.alert.alert-success {
+  background-color: #65E677;
+  border-color: #65E677;
+}
+.alert.alert-error {
+  background-color: #E04B43;
+  border-color: #E04B43;
+  color: #F5F5F5;
+}
+.alert.alert-warning {
+  background-color: #FFD91A;
+  border-color: #FFD91A;
+}
+.alert.alert-info {
+  background-color: #5994B2;
+  border-color: #5994B2;
+}
