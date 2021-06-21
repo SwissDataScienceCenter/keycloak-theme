@@ -1,0 +1,37 @@
+name: Renku Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Docker Login
+      uses: Azure/docker-login@v1
+      with:
+        username: ${{ secrets.RENKU_DOCKER_USERNAME }}
+        password: ${{ secrets.RENKU_DOCKER_PASSWORD }}
+
+    - uses: actions/checkout@v2
+    - name: Build renku project python-based docker images
+      run: |
+        if [[ ${{ github.ref }} == refs/tags* ]]; then
+          export LABEL=$(echo ${{ github.ref }} | cut -d / -f 3)
+        else
+          export LABEL=$(echo ${{ github.sha }} | cut -c 1-7)
+        fi
+
+        docker build . --tag $DOCKER_NAME:$LABEL
+        docker push $DOCKER_NAME:$LABEL
+
+        # on master push latest image
+        if [ "$REF" == "refs/heads/master" ]
+        then
+          docker tag $DOCKER_NAME:$LABEL $DOCKER_NAME:latest
+          docker push $DOCKER_NAME:latest
+        fi
+      env:
+        DOCKER_NAME: "renku/keycloak-theme"
