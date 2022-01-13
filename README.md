@@ -26,5 +26,5 @@ You can make changes to the theme and refresh in your browser to see the updates
 
 To understand the structure of the content, you may need to consult the source code for the theme.
 
-Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/11.0.3) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
+Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/15.0.2) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
 
