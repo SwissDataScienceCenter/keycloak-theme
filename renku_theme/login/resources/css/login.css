@@ -17,7 +17,7 @@
 
 @import url('../../keycloak/lib/zocial/zocial.css');
 
-body {
+.login-pf body {
     background-color: #07182B;
 
     height: 800px;
@@ -93,6 +93,19 @@ div#kc-social-providers {
     padding-left: 20px;
     flex-grow: 1;
 }
+
+
+div#kc-social-providers hr {
+    border-top: none;
+    margin: 0px;
+}
+
+div#kc-social-providers h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0px 5px 5px;
+}
+
 
 
 #kc-form label {
@@ -234,38 +247,15 @@ div#kc-social-providers ul {
     padding-top: 3px
 }
 
-div#kc-social-providers ul li {
+div#kc-social-providers ul a {
+    display: list-item;
+    padding-left: 20px;
     margin-bottom: 20px;
 }
 
-div#kc-social-providers ul li span {
-    display: inline;
-    width: 100px;
-}
-
-.zocial.acrobat,
-.zocial.bitcoin,
-.zocial.cloudapp,
-.zocial.dropbox,
-.zocial.email,
-.zocial.eventful,
-.zocial.github,
-.zocial.gmail,
-.zocial.instapaper,
-.zocial.itunes,
-.zocial.ninetyninedesigns,
-.zocial.openid,
-.zocial.plancast,
-.zocial.pocket,
-.zocial.posterous,
-.zocial.reddit,
-.zocial.secondary,
-.zocial.stackoverflow,
-.zocial.viadeo,
-.zocial.weibo,
-.zocial.wikipedia,
-a.zocial {
+div#kc-social-providers a {
     font-family: Calcutta, sans-serif;
+    text-decoration: none;
 
     box-shadow: none;
     text-shadow: none;
@@ -277,80 +267,18 @@ a.zocial {
 
     font-weight: bold;
 
-    padding: 6px 12px;
-    margin-top: 26px;
-    margin-right: 10px;
-
+    margin: 0px;
+    padding: 10px;
+    width: 150px;
     border-radius: 0;
 }
 
-
-.zocial.acrobat:focus,
-.zocial.acrobat:hover,
-.zocial.bitcoin:focus,
-.zocial.bitcoin:hover,
-.zocial.dropbox:focus,
-.zocial.dropbox:hover,
-.zocial.email:focus,
-.zocial.email:hover,
-.zocial.eventful:focus,
-.zocial.eventful:hover,
-.zocial.github:focus,
-.zocial.github:hover,
-.zocial.gmail:focus,
-.zocial.gmail:hover,
-.zocial.instapaper:focus,
-.zocial.instapaper:hover,
-.zocial.itunes:focus,
-.zocial.itunes:hover,
-.zocial.ninetyninedesigns:focus,
-.zocial.ninetyninedesigns:hover,
-.zocial.openid:focus,
-.zocial.openid:hover,
-.zocial.plancast:focus,
-.zocial.plancast:hover,
-.zocial.pocket:focus,
-.zocial.pocket:hover,
-.zocial.posterous:focus,
-.zocial.posterous:hover,
-.zocial.reddit:focus,
-.zocial.reddit:hover,
-.zocial.secondary:focus,
-.zocial.secondary:hover,
-.zocial.stackoverflow:focus,
-.zocial.stackoverflow:hover,
-.zocial.twitter:focus,
-.zocial.viadeo:focus,
-.zocial.viadeo:hover,
-.zocial.weibo:focus,
-.zocial.weibo:hover,
-.zocial.wikipedia:focus,
-.zocial.wikipedia:hover,
-a.zocial:hover {
+div#kc-social-providers a:hover {
     background: #009568;
     color: #FFFFFF
 }
 
-.zocial.acrobat:active,
-.zocial.bitcoin:active,
-.zocial.dropbox:active,
-.zocial.email:active,
-.zocial.eventful:active,
-.zocial.github:active,
-.zocial.gmail:active,
-.zocial.instapaper:active,
-.zocial.itunes:active,
-.zocial.ninetyninedesigns:active,
-.zocial.openid:active,
-.zocial.plancast:active,
-.zocial.pocket:active,
-.zocial.posterous:active,
-.zocial.reddit:active,
-.zocial.secondary:active,
-.zocial.stackoverflow:active,
-.zocial.viadeo:active,
-.zocial.weibo:active,
-.zocial.wikipedia:active {
+div#kc-social-providers a:active {
     background: #009568;
     color: #FFFFFF
 }
