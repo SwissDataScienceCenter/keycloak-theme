@@ -17,6 +17,10 @@
 
 @import url('../../keycloak/lib/zocial/zocial.css');
 
+.login-pf {
+    background: #07182B;
+}
+
 .login-pf body {
     background-color: #07182B;
 
