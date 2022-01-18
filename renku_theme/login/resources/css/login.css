@@ -209,6 +209,13 @@ div.feedback-error {
     background-color: rgba(255,0,0,0.1);
 }
 
+span#input-error {
+    color: hsl(342, 89%, 45%);
+    display: block;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
 div#kc-header {
     background-image: url('../img/logo.svg');
     background-size: cover;
