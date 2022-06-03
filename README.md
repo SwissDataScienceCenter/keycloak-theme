@@ -22,6 +22,17 @@ Then, after waiting for the service to start, connect to the url http://localhos
 
 You can make changes to the theme and refresh in your browser to see the updates. You need to do a hard refresh (e.g., Shift-Refresh on Safari) or ensure the cache is disabled to see your changes.
 
+## Testing
+
+If you want to deploy the theme in a real renku instance, you can build it and push it to docker hub, where you can reference it in a renku chart.
+
+```
+docker build -t [docker namespace]/renku-theme .
+docker push [docker namespace]/renku-theme:latest
+```
+
+In the renku chart, change the `values.yaml` to reference the image in the `keycloak.extraInitContainers` section
+
 ## Structure
 
 To understand the structure of the content, you may need to consult the source code for the theme.
