@@ -18,7 +18,9 @@ docker build -f Dockerfile.dev -t renku-theme .
 docker run -d --rm --name renku-theme -v (pwd)/renku_theme:/opt/jboss/keycloak/themes/renku_theme -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/tmp/renku-realm.json renku-theme
 ```
 
-Then, after waiting for the service to start, connect to the url http://localhost:8080/auth/realms/renku/account/
+Then, after waiting for the service to start, connect to one of these urls (depending of if you are testing the account or login page):
+* http://localhost:8080/auth/realms/renku/account/
+* http://localhost:8080/auth/realms/renku/protocol/openid-connect/auth?client_id=account&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fauth%2Frealms%2Frenku%2Faccount%2Flogin-redirect&state=1234&response_type=code&scope=openid
 
 You can make changes to the theme and refresh in your browser to see the updates. You need to do a hard refresh (e.g., Shift-Refresh on Safari) or ensure the cache is disabled to see your changes.
 
