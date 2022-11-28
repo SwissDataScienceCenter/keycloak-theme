@@ -216,6 +216,14 @@ span#input-error {
   margin-top: -15px;
 }
 
+span.pf-m-error.required {
+  color: hsl(342, 89%, 45%);
+  display: block;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+
 div#kc-header {
   background-image: url("../img/logo.svg");
   background-size: cover;
