@@ -15,14 +15,38 @@ For development, you can do the following:
 ```
 docker build -f Dockerfile.dev -t renku-theme .
 
-docker run -d --rm --name renku-theme -v (pwd)/renku_theme:/opt/jboss/keycloak/themes/renku_theme -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/tmp/renku-realm.json renku-theme
+docker run -d --rm --name renku-theme -v (pwd)/renku_theme:/opt/keycloak/themes/renku_theme -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin renku-theme start-dev --import-realm
 ```
 
-Then, after waiting for the service to start, connect to one of these urls (depending of if you are testing the account or login page):
-* http://localhost:8080/auth/realms/renku/account/
-* http://localhost:8080/auth/realms/renku/protocol/openid-connect/auth?client_id=account&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fauth%2Frealms%2Frenku%2Faccount%2Flogin-redirect&state=1234&response_type=code&scope=openid
+Then, after waiting for the service to start, connect to this URL
+
+* http://localhost:8080/realms/renku/account/
+
+From here, you can click _Sign In_ to get to the login UI.
+
 
 You can make changes to the theme and refresh in your browser to see the updates. You need to do a hard refresh (e.g., Shift-Refresh on Safari) or ensure the cache is disabled to see your changes.
+
+## Local Testing
+
+After the initial theme is set up, you should make some configuration changes to test several scenarios:
+
+### Auth providers
+
+Configure some auth providers like
+
+- Facebook http://localhost:8080/admin/master/console/#/renku/identity-providers/facebook/add
+- GitHub http://localhost:8080/admin/master/console/#/renku/identity-providers/github/add
+
+
+These should then appear on the login page.
+
+### Reset password page
+
+Enable the reset password page to make sure that looks correct:
+
+http://localhost:8080/admin/master/console/#/renku/realm-settings/login
+
 
 ## Testing
 
@@ -39,5 +63,4 @@ In the renku chart, change the `values.yaml` to reference the image in the `keyc
 
 To understand the structure of the content, you may need to consult the source code for the theme.
 
-Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/15.0.2) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
-
+Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/20.0.1) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
