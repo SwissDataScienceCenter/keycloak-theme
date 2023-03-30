@@ -15,8 +15,6 @@
  * limitations under the License.
  */
 
-@import url("../../keycloak/lib/zocial/zocial.css");
-
 .login-pf {
   background: #07182b;
 }
@@ -78,7 +76,7 @@ a {
 
 #kc-content-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -93,7 +91,8 @@ a {
 
 div#kc-social-providers {
   border-left: 1px solid #009568;
-  padding-left: 20px;
+  background-color: rgb(7, 24, 43);
+  padding: 0px 20px;
   flex-grow: 1;
 }
 
@@ -118,7 +117,7 @@ div#kc-social-providers h4 {
 }
 
 #kc-info {
-  margin-top: 40px;
+  background-color: rgb(7, 24, 43);
 }
 
 input[type="text"],
@@ -223,7 +222,6 @@ span.pf-m-error.required {
   margin-top: -15px;
 }
 
-
 div#kc-header {
   background-image: url("../img/logo.svg");
   background-size: cover;
@@ -254,7 +252,6 @@ div#kc-header-wrapper {
 #kc-info-wrapper {
   width: 400px;
 }
-
 
 div#social-login {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
