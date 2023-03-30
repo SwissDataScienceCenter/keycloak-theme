@@ -65,19 +65,19 @@ a {
 }
 
 .renku-login-card {
+  background-color: rgba(7, 24, 43, 0.3);
   position: relative;
-  top: 120px;
+  top: 20px;
   padding-bottom: 20px;
 }
 
 #kc-content {
-  width: 700px;
+  width: 400px;
 }
 
 #kc-content-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 #kc-form {
@@ -90,21 +90,18 @@ a {
 }
 
 div#kc-social-providers {
-  border-left: 1px solid #009568;
-  background-color: rgb(7, 24, 43);
-  padding: 0px 20px;
-  flex-grow: 1;
+  background-color: rgba(7, 24, 43, 0.3);
 }
 
 div#kc-social-providers hr {
-  border-top: none;
+  border-top: 1px solid #009568;
   margin: 0px;
 }
 
 div#kc-social-providers h4 {
   font-size: 16px;
   font-weight: bold;
-  margin: 5px 0px 5px 5px;
+  margin: 10px 0px 5px 5px;
 }
 
 #kc-form label {
@@ -117,6 +114,7 @@ div#kc-social-providers h4 {
 }
 
 #kc-info {
+  margin-top: 40px;
   background-color: rgb(7, 24, 43);
 }
 
