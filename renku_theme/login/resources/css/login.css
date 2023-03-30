@@ -235,6 +235,14 @@ div#kc-header-wrapper {
   width: 300px;
 }
 
+.kc-social-item {
+  text-align: center;
+}
+
+.kc-social-links {
+  font-size: 14px;
+}
+
 div#social-login {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   float: right;
@@ -278,7 +286,6 @@ div#kc-social-providers a {
 
   margin: 0px;
   padding: 10px;
-  width: 150px;
 }
 
 div#kc-social-providers a:hover {
