@@ -34,7 +34,7 @@
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .alert {
@@ -49,9 +49,7 @@ a {
   font-weight: bold;
   text-decoration: underline;
 
-  padding: 10px;
   margin-top: 20px;
-  margin-right: 10px;
 }
 
 .renku-login-container {
@@ -65,28 +63,18 @@ a {
 }
 
 .renku-login-card {
-  background-color: rgba(7, 24, 43, 0.3);
   position: relative;
   top: 20px;
   padding-bottom: 20px;
 }
 
 #kc-content {
-  width: 400px;
+  width: 300px;
 }
 
 #kc-content-wrapper {
   display: flex;
   flex-direction: column;
-}
-
-#kc-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-#kc-form-wrapper {
-  padding-right: 40px;
 }
 
 div#kc-social-providers {
@@ -114,7 +102,7 @@ div#kc-social-providers h4 {
 }
 
 #kc-info {
-  margin-top: 40px;
+  margin-top: 10px;
   background-color: rgb(7, 24, 43);
 }
 
@@ -245,10 +233,6 @@ div#kc-header-wrapper {
 #kc-reset-password-form {
   margin-bottom: 20px;
   width: 300px;
-}
-
-#kc-info-wrapper {
-  width: 400px;
 }
 
 div#social-login {
