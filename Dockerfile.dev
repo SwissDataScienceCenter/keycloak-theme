@@ -1,11 +1,11 @@
-FROM docker.io/jboss/keycloak:15.0.2
+FROM keycloak/keycloak:20.0.1
 
 # Turn of caching in the configuration so we can modify the theme and refresh to see changes
 COPY ./renku-theme-dev/standalone.xml /opt/jboss/keycloak/standalone/configuration/standalone.xml
 COPY ./renku-theme-dev/standalone-ha.xml /opt/jboss/keycloak/standalone/configuration/standalone-ha.xml
 
 # Set up a Renku realm
-COPY ./renku-theme-dev/renku-realm.json /tmp/renku-realm.json
+COPY ./renku-theme-dev/renku-realm.json /opt/keycloak/data/import/renku-realm.json
 
 # Copy the theme in, though this content will be overridden if you mount the folder when running
-COPY ./renku_theme/ /opt/jboss/keycloak/themes/renku_theme/
+COPY ./renku_theme/ /opt/keycloak/themes/renku_theme/

@@ -15,8 +15,6 @@
  * limitations under the License.
  */
 
-@import url("../../keycloak/lib/zocial/zocial.css");
-
 .login-pf {
   background: #07182b;
 }
@@ -36,7 +34,7 @@
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .alert {
@@ -51,9 +49,7 @@ a {
   font-weight: bold;
   text-decoration: underline;
 
-  padding: 10px;
   margin-top: 20px;
-  margin-right: 10px;
 }
 
 .renku-login-container {
@@ -68,44 +64,32 @@ a {
 
 .renku-login-card {
   position: relative;
-  top: 120px;
+  top: 20px;
   padding-bottom: 20px;
 }
 
 #kc-content {
-  width: 700px;
+  width: 300px;
 }
 
 #kc-content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-#kc-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-#kc-form-wrapper {
-  padding-right: 40px;
 }
 
 div#kc-social-providers {
-  border-left: 1px solid #009568;
-  padding-left: 20px;
-  flex-grow: 1;
+  background-color: rgba(7, 24, 43, 0.3);
 }
 
 div#kc-social-providers hr {
-  border-top: none;
+  border-top: 1px solid #009568;
   margin: 0px;
 }
 
 div#kc-social-providers h4 {
   font-size: 16px;
   font-weight: bold;
-  margin: 5px 0px 5px 5px;
+  margin: 10px 0px 5px 5px;
 }
 
 #kc-form label {
@@ -118,7 +102,8 @@ div#kc-social-providers h4 {
 }
 
 #kc-info {
-  margin-top: 40px;
+  margin-top: 10px;
+  background-color: rgb(7, 24, 43);
 }
 
 input[type="text"],
@@ -223,7 +208,6 @@ span.pf-m-error.required {
   margin-top: -15px;
 }
 
-
 div#kc-header {
   background-image: url("../img/logo.svg");
   background-size: cover;
@@ -251,10 +235,13 @@ div#kc-header-wrapper {
   width: 300px;
 }
 
-#kc-info-wrapper {
-  width: 400px;
+.kc-social-item {
+  text-align: center;
 }
 
+.kc-social-links {
+  font-size: 14px;
+}
 
 div#social-login {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -299,7 +286,6 @@ div#kc-social-providers a {
 
   margin: 0px;
   padding: 10px;
-  width: 150px;
 }
 
 div#kc-social-providers a:hover {
