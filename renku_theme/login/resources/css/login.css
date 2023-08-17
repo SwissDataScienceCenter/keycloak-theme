@@ -69,12 +69,12 @@ a {
 }
 
 #kc-content {
-  width: 300px;
+  width: auto;
 }
 
 #kc-content-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 div#kc-social-providers {
