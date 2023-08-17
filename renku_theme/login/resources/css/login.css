@@ -107,6 +107,10 @@ div#kc-social-providers h4 {
   width: 100%;
 }
 
+#kc-page-title {
+  margin-bottom: 20px;;
+}
+
 input[type="text"],
 input[type="password"] {
   color: #3d3d3d;
