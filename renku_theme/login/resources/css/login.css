@@ -104,6 +104,7 @@ div#kc-social-providers h4 {
 #kc-info {
   margin-top: 10px;
   background-color: rgb(7, 24, 43);
+  width: 100%;
 }
 
 input[type="text"],
