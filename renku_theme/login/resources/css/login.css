@@ -69,12 +69,12 @@ a {
 }
 
 #kc-content {
-  width: 300px;
+  width: auto;
 }
 
 #kc-content-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 div#kc-social-providers {
@@ -104,6 +104,11 @@ div#kc-social-providers h4 {
 #kc-info {
   margin-top: 10px;
   background-color: rgb(7, 24, 43);
+  width: 100%;
+}
+
+#kc-page-title {
+  margin-bottom: 20px;
 }
 
 input[type="text"],
