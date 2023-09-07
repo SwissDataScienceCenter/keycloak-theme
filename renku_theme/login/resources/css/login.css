@@ -77,19 +77,14 @@ a {
   flex-wrap: wrap;
 }
 
-div#kc-social-providers {
-  background-color: rgba(7, 24, 43, 0.3);
-}
-
-div#kc-social-providers hr {
-  border-top: 1px solid #009568;
-  margin: 0px;
-}
-
 div#kc-social-providers h4 {
   font-size: 16px;
   font-weight: bold;
   margin: 10px 0px 5px 5px;
+}
+
+#kc-form {
+  border-bottom: 1px solid #009568;
 }
 
 #kc-form label {
@@ -256,6 +251,15 @@ div#social-login {
 }
 
 div.social-login span {
+  display: none;
+}
+
+div#kc-social-providers {
+  background-color: rgba(7, 24, 43, 0.3);
+  padding: 20px 0px 0px 40px;
+}
+
+div#kc-social-providers hr {
   display: none;
 }
 
