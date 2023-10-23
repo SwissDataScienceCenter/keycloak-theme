@@ -64,7 +64,7 @@ a {
 
 .renku-login-card {
   position: relative;
-  top: 20px;
+  top: 50px;
   padding-bottom: 20px;
 }
 
@@ -85,6 +85,8 @@ div#kc-social-providers h4 {
 
 #kc-form {
   border-bottom: 1px solid #009568;
+  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 #kc-form label {
@@ -97,9 +99,8 @@ div#kc-social-providers h4 {
 }
 
 #kc-info {
-  margin-top: 10px;
-  background-color: rgb(7, 24, 43);
   width: 100%;
+  margin-bottom: 20px;
 }
 
 #kc-page-title {
@@ -256,7 +257,8 @@ div.social-login span {
 
 div#kc-social-providers {
   background-color: rgba(7, 24, 43, 0.3);
-  padding: 20px 0px 0px 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 div#kc-social-providers hr {
