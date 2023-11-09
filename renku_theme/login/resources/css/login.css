@@ -334,7 +334,7 @@ div#kc-social-providers a:active {
   margin-bottom: 40px;
 }
 
-#login-separator  {
+#login-separator {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,7 +347,6 @@ div#kc-social-providers a:active {
   height: 110px;
   background-color: #ffffff7d;
 }
-
 
 @media only screen and (max-width: 1080px) {
   #kc-content-wrapper {
