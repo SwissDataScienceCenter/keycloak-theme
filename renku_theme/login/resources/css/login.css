@@ -27,8 +27,7 @@
 
 .login-pf body {
   background-color: #07182b;
-
-  height: 800px;
+  height: 100vh;
   background-image: url("../img/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +40,10 @@
 
 h1 {
   font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 0;
 }
 
 .alert {
@@ -66,11 +69,13 @@ a {
 
 .renku-login-container {
   padding: 1.5rem;
+  background-color: #09182bbf;
 }
 
 @media only screen and (min-width: 768px) {
   .renku-login-container {
     padding: 10px 85px;
+    height: 100%;
   }
 }
 
@@ -78,7 +83,6 @@ a {
   position: relative;
   top: 50px;
   padding-bottom: 20px;
-  background-color: #09182bbf;
 }
 
 #kc-content {
@@ -161,7 +165,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #009568;
+  background: #007A6C;
   color: #ffffff;
 }
 
@@ -321,7 +325,7 @@ div#kc-social-providers a {
 }
 
 div#kc-social-providers a:hover {
-  background: #009568;
+  background: #007A6C;
   color: #ffffff;
 }
 
@@ -330,8 +334,11 @@ div#kc-social-providers a:active {
   color: #ffffff;
 }
 
-.login-section-title {
+.login-section-title-providers {
   margin-bottom: 40px;
+}
+.login-section-title-form {
+  margin-bottom: 35px;
 }
 
 #login-separator  {

@@ -5,7 +5,7 @@
     <#elseif section = "socialProviders" >
         <#if realm.password && social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
-                <h2 class="login-section-title">${msg("identity-provider-login-label")}</h2>
+                <h2 class="login-section-title-providers">${msg("identity-provider-login-label")}</h2>
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
                     <#list social.providers as p>
                         <a id="social-${p.alias}" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
@@ -25,11 +25,7 @@
     <div id="kc-form">
       <div id="kc-form-wrapper">
         <#if realm.password>
-             <#if realm.password && social.providers??>
-                 <h2 class="login-section-title">${msg("loginFormLabelWithAdditionalProviders")}</h2>
-             <#else>
-                 <h2 class="login-section-title">${msg("loginFormLabel")}</h2>
-             </#if>
+            <h2 class="login-section-title-form">${msg("loginFormLabel")}</h2>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <#if !usernameHidden??>
                     <div class="${properties.kcFormGroupClass!}">
