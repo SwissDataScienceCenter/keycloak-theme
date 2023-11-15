@@ -19,10 +19,15 @@
   background: #07182b;
 }
 
+.login-pf header h1 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .login-pf body {
   background-color: #07182b;
-
-  height: 800px;
+  height: 100vh;
   background-image: url("../img/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,9 +42,19 @@ h1 {
   font-size: 24px;
 }
 
+.form-group {
+  margin-bottom: 0;
+}
+
 .alert {
   padding: 5px;
   margin-bottom: 15px;
+}
+
+.alert-error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -54,11 +69,13 @@ a {
 
 .renku-login-container {
   padding: 1.5rem;
+  background-color: #09182bbf;
 }
 
 @media only screen and (min-width: 768px) {
   .renku-login-container {
     padding: 10px 85px;
+    height: 100%;
   }
 }
 
@@ -75,6 +92,10 @@ a {
 #kc-content-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-direction: row-reverse;
 }
 
 div#kc-social-providers h4 {
@@ -84,9 +105,12 @@ div#kc-social-providers h4 {
 }
 
 #kc-form {
-  border-bottom: 1px solid #009568;
-  margin-right: 40px;
   margin-bottom: 20px;
+}
+
+#kc-form-login {
+  width: 300px;
+  margin: auto;
 }
 
 #kc-form label {
@@ -95,16 +119,17 @@ div#kc-social-providers h4 {
 }
 
 #kc-form-buttons {
-  text-align: right;
+  text-align: left;
 }
 
 #kc-info {
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #kc-page-title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 input[type="text"],
@@ -136,11 +161,11 @@ input[type="submit"] {
 
   padding: 10px;
   margin-top: 10px;
-  width: 150px;
+  width: 300px;
 }
 
 input[type="submit"]:hover {
-  background: #009568;
+  background: #007A6C;
   color: #ffffff;
 }
 
@@ -211,6 +236,7 @@ span.pf-m-error.required {
 
 div#kc-header {
   background-image: url("../img/logo.svg");
+  background-color: #07182b;
   background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
@@ -257,7 +283,6 @@ div.social-login span {
 
 div#kc-social-providers {
   background-color: rgba(7, 24, 43, 0.3);
-  margin-right: 40px;
   margin-bottom: 20px;
 }
 
@@ -267,17 +292,17 @@ div#kc-social-providers hr {
 
 div#kc-social-providers ul {
   list-style: none;
-  margin: 0;
-  padding-left: 5px;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-top: 3px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div#kc-social-providers ul a {
   display: list-item;
   padding-left: 20px;
   margin-bottom: 20px;
+  width: 300px;
 }
 
 div#kc-social-providers a {
@@ -300,11 +325,54 @@ div#kc-social-providers a {
 }
 
 div#kc-social-providers a:hover {
-  background: #009568;
+  background: #007A6C;
   color: #ffffff;
 }
 
 div#kc-social-providers a:active {
   background: #009568;
   color: #ffffff;
+}
+
+.login-section-title-providers {
+  margin-bottom: 40px;
+}
+.login-section-title-form {
+  margin-bottom: 35px;
+}
+
+#login-separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+#login-separator .separator {
+  width: 1px;
+  height: 110px;
+  background-color: #ffffff7d;
+}
+
+@media only screen and (max-width: 1080px) {
+  #kc-content-wrapper {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #login-separator {
+    flex-direction: row;
+    margin: 20px;
+  }
+  #login-separator .separator {
+    width: 100px;
+    height: 1px;
+  }
+  div#kc-social-providers ul {
+    margin-bottom: 0;
+    gap: 40px;
+  }
+  div#kc-social-providers ul a {
+    margin: 0;
+  }
 }
