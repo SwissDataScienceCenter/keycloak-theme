@@ -1,0 +1,13 @@
+services:
+  keycloak:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ./renku_theme:/opt/keycloak/themes/renku_theme:ro
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command: ["start-dev", "--import-realm"]

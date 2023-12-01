@@ -33,7 +33,7 @@
   background-repeat: no-repeat;
 
   color: #fff;
-  font-family: Inter, sans-serif;
+  font-family: var(--inter-font);
   font-size: 16px;
   text-shadow: none;
 }
@@ -150,7 +150,7 @@ input[type="password"]:hover {
 }
 
 input[type="submit"] {
-  font-family: Inter, sans-serif;
+  font-family: var(--inter-font);
 
   background-color: #07182b;
   color: #009568;
@@ -165,12 +165,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #007A6C;
+  background: #007a6c;
   color: #ffffff;
 }
 
 button[type="submit"] {
-  font-family: Inter, sans-serif;
+  font-family: var(--inter-font);
 
   background-color: #07182b;
   color: #009568;
@@ -306,7 +306,7 @@ div#kc-social-providers ul a {
 }
 
 div#kc-social-providers a {
-  font-family: Inter, sans-serif;
+  font-family: var(--inter-font);
   text-decoration: none;
 
   box-shadow: none;
@@ -325,7 +325,7 @@ div#kc-social-providers a {
 }
 
 div#kc-social-providers a:hover {
-  background: #007A6C;
+  background: #007a6c;
   color: #ffffff;
 }
 
