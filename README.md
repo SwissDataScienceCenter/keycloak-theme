@@ -2,11 +2,33 @@
 
 This project defines the keycloak theme shown on RenkuLab.
 
-# Production
+## Production
 
 In production, the Docker image is mounted into container running Keycloak. See the keycloak section of the helm chart/values file: https://github.com/SwissDataScienceCenter/renku/blob/master/helm-chart/renku/values.yaml. Search for `theme` to find the relevant lines.
 
-# Development
+## Configuration
+
+The theme can be configured to prompt a user to accept the **terms of service** on their first login. This is off by default, but to enable it, modify the following section in `renku-realm.json`:
+
+```
+{
+    "alias": "terms_and_conditions",
+    "name": "Terms and Conditions",
+    "providerId": "terms_and_conditions",
+    "enabled": false,
+    "defaultAction": true,
+    "priority": 20,
+    "config": {}
+}
+```
+
+and set `enabled` to `true`.
+
+```
+"enabled": true,
+```
+
+## Development
 
 For development, there is a `Dockerfile.dev` that can be built and run locally to shorten the feedback loop.
 
