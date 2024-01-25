@@ -2,8 +2,10 @@
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username','password') displayInfo=realm.password && realm.registrationAllowed && !registrationDisabled??; section>
     <#if section = "header">
         ${msg("loginAccountTitle")}
-        <div id="renku-login-terms-text">
-            ${kcSanitize(msg("termsText"))?no_esc}
+        <div id="renku-login-terms-container">
+            <div id="renku-login-terms-text">
+                ${kcSanitize(msg("termsText"))?no_esc}
+            </div>
         </div>
     <#elseif section = "socialProviders" >
         <#if realm.password && social.providers??>
