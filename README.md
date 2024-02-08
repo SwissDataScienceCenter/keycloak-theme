@@ -12,9 +12,6 @@ Keycloak can be configured to prompt a user to accept the **terms of service** o
 
 Select the `Required Actions` tab, make sure `Terms and Conditions` is enabled and set it as default action as well.
 
-More details are available in this [stack overflow post](
-https://stackoverflow.com/a/77638989/5804638).
-
 For a Keycloak version different from 20, consult the admin guide, since the configuration may be different.
 
 ## Development
