@@ -8,25 +8,14 @@ In production, the Docker image is mounted into container running Keycloak. See 
 
 ## Configuration
 
-The theme can be configured to prompt a user to accept the **terms of service** on their first login. This is off by default, but to enable it, modify the following section in `renku-realm.json`:
+Keycloak can be configured to prompt a user to accept the **terms of service** on their first login. In Keycloack version 20, this can be done in the admin UI under the `Authentication` section for the realm.
 
-```
-{
-    "alias": "terms_and_conditions",
-    "name": "Terms and Conditions",
-    "providerId": "terms_and_conditions",
-    "enabled": false,
-    "defaultAction": true,
-    "priority": 20,
-    "config": {}
-}
-```
+Select the `Required Actions` tab, make sure `Terms and Conditions` is enabled and set it as default action as well.
 
-and set `enabled` to `true`.
+More details are available in this [stack overflow post](
+https://stackoverflow.com/a/77638989/5804638).
 
-```
-"enabled": true,
-```
+For a Keycloak version different from 20, consult the admin guide, since the configuration may be different.
 
 ## Development
 
@@ -48,6 +37,28 @@ From here, you can click _Sign In_ to get to the login UI.
 
 
 You can make changes to the theme and refresh in your browser to see the updates. You need to do a hard refresh (e.g., Shift-Refresh on Safari) or ensure the cache is disabled to see your changes.
+
+### Configuration
+
+Keycloak can be configured to prompt a user to accept the **terms of service** on their first login. This is off by default, but to enable it, modify the following section in `renku-realm.json`:
+
+```
+{
+    "alias": "terms_and_conditions",
+    "name": "Terms and Conditions",
+    "providerId": "terms_and_conditions",
+    "enabled": false,
+    "defaultAction": true,
+    "priority": 20,
+    "config": {}
+}
+```
+
+and set `enabled` to `true`.
+
+```
+"enabled": true,
+```
 
 ## Local Testing
 
