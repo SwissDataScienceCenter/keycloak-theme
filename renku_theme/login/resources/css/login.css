@@ -165,7 +165,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #007A6C;
+  background: #007a6c;
   color: #ffffff;
 }
 
@@ -325,7 +325,7 @@ div#kc-social-providers a {
 }
 
 div#kc-social-providers a:hover {
-  background: #007A6C;
+  background: #007a6c;
   color: #ffffff;
 }
 
@@ -353,6 +353,18 @@ div#kc-social-providers a:active {
   width: 1px;
   height: 110px;
   background-color: #ffffff7d;
+}
+
+div#renku-login-terms-container {
+  display: flex;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+div#renku-login-terms-text {
+  max-width: 400px;
 }
 
 @media only screen and (max-width: 1080px) {

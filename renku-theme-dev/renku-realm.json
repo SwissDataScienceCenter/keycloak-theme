@@ -1325,7 +1325,7 @@
       "name": "Terms and Conditions",
       "providerId": "terms_and_conditions",
       "enabled": false,
-      "defaultAction": false,
+      "defaultAction": true,
       "priority": 20,
       "config": {}
     },
