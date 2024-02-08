@@ -355,6 +355,18 @@ div#kc-social-providers a:active {
   background-color: #ffffff7d;
 }
 
+div#renku-login-terms-container {
+  display: flex;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+div#renku-login-terms-text {
+  max-width: 400px;
+}
+
 @media only screen and (max-width: 1080px) {
   #kc-content-wrapper {
     align-items: center;
