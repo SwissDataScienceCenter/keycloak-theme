@@ -21,17 +21,14 @@ For development, there is a `Dockerfile.dev` that can be built and run locally t
 For development, you can do the following:
 
 ```
-docker build -f Dockerfile.dev -t renku-theme .
-
-docker run -d --rm --name renku-theme -v (pwd)/renku_theme:/opt/keycloak/themes/renku_theme -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin renku-theme start-dev --import-realm
+docker compose up -d
 ```
 
 Then, after waiting for the service to start, connect to this URL
 
-* http://localhost:8080/realms/renku/account/
+- http://localhost:8080/realms/renku/account/
 
 From here, you can click _Sign In_ to get to the login UI.
-
 
 You can make changes to the theme and refresh in your browser to see the updates. You need to do a hard refresh (e.g., Shift-Refresh on Safari) or ensure the cache is disabled to see your changes.
 
@@ -68,7 +65,6 @@ Configure some auth providers like
 - Facebook http://localhost:8080/admin/master/console/#/renku/identity-providers/facebook/add
 - GitHub http://localhost:8080/admin/master/console/#/renku/identity-providers/github/add
 
-
 These should then appear on the login page.
 
 ### Reset password page
@@ -76,7 +72,6 @@ These should then appear on the login page.
 Enable the reset password page to make sure that looks correct:
 
 http://localhost:8080/admin/master/console/#/renku/realm-settings/login
-
 
 ## Testing
 
