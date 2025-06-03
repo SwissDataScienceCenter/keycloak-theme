@@ -364,7 +364,18 @@ div#renku-login-terms-container {
 }
 
 div#renku-login-terms-text {
-  max-width: 400px;
+  max-width: 600px;
+  font-size: 16px;
+  background-color: rgb(209, 236, 241);
+  border-color: #a2dae3;
+  border-width: 1px;
+  border-radius: 5px;
+  color: rgb(9, 65, 74);
+  padding: 16px;
+  line-height: 24px;
+  text-align: justify;
+  display: flex;
+  column-gap: 20px;
 }
 
 @media only screen and (max-width: 1080px) {
