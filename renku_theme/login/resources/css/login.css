@@ -373,8 +373,6 @@ div#renku-login-terms-text {
   color: rgb(9, 65, 74);
   padding: 16px;
   line-height: 24px;
-  text-align: justify;
-  display: flex;
   column-gap: 20px;
 }
 
