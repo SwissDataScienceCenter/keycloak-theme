@@ -374,6 +374,8 @@ div#renku-login-terms-text {
   padding: 16px;
   line-height: 24px;
   column-gap: 20px;
+  display: flex;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -395,5 +397,8 @@ div#renku-login-terms-text {
   }
   div#kc-social-providers ul a {
     margin: 0;
+  }
+  div#renku-login-terms-icon {
+    display: none;
   }
 }
