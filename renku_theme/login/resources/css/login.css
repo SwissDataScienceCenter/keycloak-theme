@@ -81,7 +81,7 @@ a {
 
 .renku-login-card {
   position: relative;
-  top: 50px;
+  top: 30px;
   padding-bottom: 20px;
 }
 
@@ -236,12 +236,12 @@ span.pf-m-error.required {
 }
 
 div#kc-header {
-  background-image: url("../img/round-logo.svg");
+  background-image: url("../img/logo.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 219px;
-  height: 219px;
-  margin-top: 50px;
+  width: 200px;
+  height: 80px;
+  margin-top: 200px;
 }
 
 div#kc-header-wrapper {
