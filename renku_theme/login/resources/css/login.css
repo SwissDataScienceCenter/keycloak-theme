@@ -26,12 +26,10 @@
 }
 
 .login-pf body {
-  background-color: #07182b;
-  height: 100vh;
-  background-image: url("../img/background.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  background-color: #09182bbf;
+  background-image: url("../img/dots_background.svg");
+  background-repeat: repeat-x;
+  background-position: top;
   color: #fff;
   font-family: var(--inter-font);
   font-size: 16px;
@@ -70,18 +68,20 @@ a {
 .renku-login-container {
   padding: 1.5rem;
   background-color: #09182bbf;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
   .renku-login-container {
     padding: 10px 85px;
-    height: 100%;
   }
 }
 
 .renku-login-card {
   position: relative;
-  top: 50px;
+  top: 30px;
   padding-bottom: 20px;
 }
 
@@ -129,6 +129,7 @@ div#kc-social-providers h4 {
 }
 
 #kc-page-title {
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
@@ -236,11 +237,11 @@ span.pf-m-error.required {
 
 div#kc-header {
   background-image: url("../img/logo.svg");
-  background-color: #07182b;
   background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
   height: 80px;
+  margin-top: 200px;
 }
 
 div#kc-header-wrapper {
