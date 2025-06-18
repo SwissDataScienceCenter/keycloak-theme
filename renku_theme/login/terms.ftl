@@ -5,7 +5,7 @@
     <#elseif section = "form">
         <div id="renku-terms-wrapper">
         <div id="kc-terms-text">
-            ${kcSanitize(msg("termsText"))?no_esc}
+            ${msg("termsText")?no_esc}
         </div>
         <form class="form-actions" action="${url.loginAction}" method="POST">
             <input class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}" name="cancel" id="kc-decline" type="submit" value="${msg("doDecline")}"/>

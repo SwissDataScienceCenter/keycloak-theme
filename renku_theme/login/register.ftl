@@ -4,7 +4,7 @@
         ${msg("registerTitle")}
         <div id="renku-login-terms-container">
             <div id="renku-login-terms-text">
-                ${kcSanitize(msg("termsText"))?no_esc}
+                ${msg("termsText")?no_esc}
             </div>
         </div>
     <#elseif section = "form">
