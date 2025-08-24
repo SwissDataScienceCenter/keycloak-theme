@@ -1,4 +1,4 @@
-FROM keycloak/keycloak:20.0.1
+FROM keycloak/keycloak:26.0.7
 
 # Turn of caching in the configuration so we can modify the theme and refresh to see changes
 COPY ./renku-theme-dev/standalone.xml /opt/jboss/keycloak/standalone/configuration/standalone.xml
