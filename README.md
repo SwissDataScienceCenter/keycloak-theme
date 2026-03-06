@@ -88,4 +88,4 @@ In the renku chart, change the `values.yaml` to reference the image in the `keyc
 
 To understand the structure of the content, you may need to consult the source code for the theme.
 
-Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/20.0.1) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
+Download the source for the release that is used (https://github.com/keycloak/keycloak/releases/tag/25.0.6) and then look in the `themes/src/main/resources/theme` folder for the `base` and `keycloak` templates. Official theme examples are found in `examples/themes/src/main/resources/theme` folder.
