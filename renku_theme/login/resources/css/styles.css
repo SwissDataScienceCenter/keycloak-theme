@@ -10,16 +10,34 @@
   background-color: #65E677;
   border-color: #65E677;
 }
+
 .pf-c-alert.pf-m-danger {
   background-color: #E04B43;
   border-color: #E04B43;
   color: #F5F5F5;
 }
+
 .pf-c-alert.pf-m-warning {
   background-color: #FFD91A;
   border-color: #FFD91A;
 }
+
 .pf-c-alert.pf-m-info {
   background-color: #5994B2;
   border-color: #5994B2;
+}
+
+/* Text + icon color per alert type (override PatternFly's own title color) */
+.pf-c-alert.pf-m-danger .pf-c-alert__title,
+.pf-c-alert.pf-m-danger .pf-c-alert__icon,
+.pf-c-alert.pf-m-info .pf-c-alert__title,
+.pf-c-alert.pf-m-info .pf-c-alert__icon {
+  color: #F5F5F5;
+}
+
+.pf-c-alert.pf-m-success .pf-c-alert__title,
+.pf-c-alert.pf-m-success .pf-c-alert__icon,
+.pf-c-alert.pf-m-warning .pf-c-alert__title,
+.pf-c-alert.pf-m-warning .pf-c-alert__icon {
+  color: #07182b;
 }

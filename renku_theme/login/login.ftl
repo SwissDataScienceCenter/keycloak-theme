@@ -13,7 +13,7 @@
             </div>
         </div>
     <#elseif section = "socialProviders" >
-        <#if realm.password && social.providers??>
+        <#if realm.password && social?? && social.providers?has_content>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 <h2 class="login-section-title-providers">${msg("identity-provider-login-label")}</h2>
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
@@ -100,7 +100,7 @@
         </div>
 
     </div>
-    <#if realm.password && social.providers??>
+    <#if realm.password && social?? && social.providers?has_content>
         <div id="login-separator">
             <div class="separator"></div>
             OR
