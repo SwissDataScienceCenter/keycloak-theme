@@ -150,8 +150,15 @@ input[type="password"]:hover {
   background-color: #f5f5f5;
 }
 
+.pf-c-button.pf-m-primary,
 input[type="submit"] {
   font-family: var(--inter-font);
+
+  /* Override PatternFly v4 primary-button colors (default is light blue) */
+  --pf-c-button--m-primary--BackgroundColor: #07182b;
+  --pf-c-button--m-primary--hover--BackgroundColor: #007a6c;
+  --pf-c-button--m-primary--active--BackgroundColor: #009568;
+  --pf-c-button--m-primary--focus--BackgroundColor: #07182b;
 
   background-color: #07182b;
   color: #009568;
@@ -165,6 +172,7 @@ input[type="submit"] {
   width: 300px;
 }
 
+.pf-c-button.pf-m-primary:hover,
 input[type="submit"]:hover {
   background: #007a6c;
   color: #ffffff;
@@ -194,31 +202,6 @@ button[type="submit"]:hover {
 div#kc-form-options div {
   display: inline-block;
   margin-right: 20px;
-}
-
-div#kc-feedback {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-div#kc-feedback-wrapper {
-  padding: 1em;
-}
-
-div.feedback-success {
-  background-color: rgba(155, 155, 255, 0.1);
-}
-
-div.feedback-warning {
-  background-color: rgba(255, 175, 0, 0.1);
-}
-
-div.feedback-error {
-  background-color: rgba(255, 0, 0, 0.1);
 }
 
 span#input-error {
@@ -297,6 +280,7 @@ div#kc-social-providers ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 div#kc-social-providers ul a {
@@ -306,12 +290,21 @@ div#kc-social-providers ul a {
   width: 300px;
 }
 
+div#kc-social-providers a.pf-c-button.pf-m-control,
 div#kc-social-providers a {
   font-family: var(--inter-font);
   text-decoration: none;
 
   box-shadow: none;
   text-shadow: none;
+
+  /* Override PatternFly v4 pf-m-control variant: light background + ::after border */
+  --pf-c-button--m-control--BackgroundColor: #07182b;
+  --pf-c-button--m-control--after--BorderColor: transparent;
+  --pf-c-button--m-control--after--BorderTopColor: transparent;
+  --pf-c-button--m-control--after--BorderRightColor: transparent;
+  --pf-c-button--m-control--after--BorderBottomColor: transparent;
+  --pf-c-button--m-control--after--BorderLeftColor: transparent;
 
   background: none;
   background-color: #07182b;
@@ -325,12 +318,21 @@ div#kc-social-providers a {
   padding: 10px;
 }
 
+div#kc-social-providers a.pf-c-button.pf-m-control::after,
+div#kc-social-providers a::after {
+  border: none;
+}
+
+div#kc-social-providers a.pf-c-button.pf-m-control:hover,
 div#kc-social-providers a:hover {
+  --pf-c-button--m-control--hover--BackgroundColor: #007a6c;
   background: #007a6c;
   color: #ffffff;
 }
 
+div#kc-social-providers a.pf-c-button.pf-m-control:active,
 div#kc-social-providers a:active {
+  --pf-c-button--m-control--active--BackgroundColor: #009568;
   background: #009568;
   color: #ffffff;
 }
@@ -338,6 +340,7 @@ div#kc-social-providers a:active {
 .login-section-title-providers {
   margin-bottom: 40px;
 }
+
 .login-section-title-form {
   margin-bottom: 35px;
 }
@@ -384,21 +387,26 @@ div#renku-login-terms-text {
     align-items: center;
     flex-direction: column-reverse;
   }
+
   #login-separator {
     flex-direction: row;
     margin: 20px;
   }
+
   #login-separator .separator {
     width: 100px;
     height: 1px;
   }
+
   div#kc-social-providers ul {
     margin-bottom: 0;
     gap: 40px;
   }
+
   div#kc-social-providers ul a {
     margin: 0;
   }
+
   div#renku-login-terms-icon {
     display: none;
   }

@@ -1,17 +1,43 @@
-.alert.alert-success {
+/*
+ * Alert / feedback message styling.
+ *
+ * As of Keycloak 26 the login template renders messages as a PatternFly v4
+ * alert: <div class="alert-<type> pf-c-alert pf-m-inline pf-m-<danger|success|warning|info>">.
+ * Target the pf-c-alert + pf-m-* classes (the old `.alert.alert-*` compound
+ * selectors no longer match, since Keycloak emits `alert-<type>` as a single token).
+ */
+.pf-c-alert.pf-m-success {
   background-color: #65E677;
   border-color: #65E677;
 }
-.alert.alert-error {
+
+.pf-c-alert.pf-m-danger {
   background-color: #E04B43;
   border-color: #E04B43;
   color: #F5F5F5;
 }
-.alert.alert-warning {
+
+.pf-c-alert.pf-m-warning {
   background-color: #FFD91A;
   border-color: #FFD91A;
 }
-.alert.alert-info {
+
+.pf-c-alert.pf-m-info {
   background-color: #5994B2;
   border-color: #5994B2;
+}
+
+/* Text + icon color per alert type (override PatternFly's own title color) */
+.pf-c-alert.pf-m-danger .pf-c-alert__title,
+.pf-c-alert.pf-m-danger .pf-c-alert__icon,
+.pf-c-alert.pf-m-info .pf-c-alert__title,
+.pf-c-alert.pf-m-info .pf-c-alert__icon {
+  color: #F5F5F5;
+}
+
+.pf-c-alert.pf-m-success .pf-c-alert__title,
+.pf-c-alert.pf-m-success .pf-c-alert__icon,
+.pf-c-alert.pf-m-warning .pf-c-alert__title,
+.pf-c-alert.pf-m-warning .pf-c-alert__icon {
+  color: #07182b;
 }
