@@ -178,6 +178,30 @@ input[type="submit"]:hover {
   color: #ffffff;
 }
 
+/* Override style to make Yes button on oauth consent screen highlighted and No plain*/
+#kc-oauth .pf-c-button.btn-default {
+  background-color: #07182b;
+  background-image: none;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+#kc-oauth .pf-c-button.btn-default:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+#kc-oauth .pf-c-button.pf-m-primary {
+  background-color: #006e58;
+  color: #fff;
+  border-color: #006e58;
+}
+
+#kc-oauth .pf-c-button.pf-m-primary:hover {
+  background-color: #005e4b;
+  border-color: #005846;
+}
+
 button[type="submit"] {
   font-family: var(--inter-font);
 
